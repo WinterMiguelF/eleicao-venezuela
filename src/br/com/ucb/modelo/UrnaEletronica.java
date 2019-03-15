@@ -4,9 +4,11 @@ import com.sun.xml.internal.ws.util.StringUtils;
 
 public class UrnaEletronica {
 
-	private static final int NICOLAS_MADURO = 11;
-	private static final int JUAN_GUAIDO = 23;
+	private static final String NICOLAS_MADURO = "11";
+	private static final String JUAN_GUAIDO = "23";
 	private int voto;
+	private int contadorNicolas = 0;
+	private int contadorJuan = 0;
 
 	public int getVoto() {
 		return voto;
@@ -16,21 +18,12 @@ public class UrnaEletronica {
 		this.voto = voto;
 	}
 
-	// public void votar() {
-	// if (this.voto != null) {
-	// this.voto = this.voto;
-	// }
-	// this.voto = null;
-	// }
-
-	public String registrarVotos() {
-
-		if (this.voto != null) {
-			if (this.voto == 11) {
-
-			}
-		}
-
+	public void votarMaduro() {
+		this.contadorNicolas++;
 	}
-
+	
+	public void votarJuan() {
+		this.contadorJuan++;
+	}
+	
 }

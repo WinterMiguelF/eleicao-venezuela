@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core">
-
 <h:head>
-	<title>ELEIÇÕES - 2019</title>
+	<title>Resultado</title>
 </h:head>
-
-<h:messages>VOTO REGISTRADO COM SUCESSO</h:messages>
-<p />
-
-
+<h:body>
+	<h:outputText
+		value="Votos no maduro:
+#{urnaEletronicaMB.urnaEletronica.contadorNicolas}" />
+	<br />
+</h:body>
 </html>

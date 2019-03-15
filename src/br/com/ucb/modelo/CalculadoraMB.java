@@ -12,8 +12,5 @@ public class CalculadoraMB {
 		this.calculadora = new Calculadora();
 	}
 	
-	public String registrarVoto() {
-		return "";
-	}
 
 }

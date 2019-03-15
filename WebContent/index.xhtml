@@ -8,7 +8,24 @@
 	<title>ELEIÇÕES - 2019</title>
 </h:head>
 
+<h:form>
 
+	<h:messages>ELEIÇÕES 2019 - ESCOLHA SEU CANDIDATO</h:messages>
+	<p />
 
+	<br />
+	<h:selectOneMenu value="urnaEletronicaMB.urnaEletronica.voto">
+		<f:selectItem itemLabel="-- Selecione --" noSelectionOption="true" />
+		<f:selectItem itemLabel="NICOLÁS MADURO - 11" itemValue="11" />
+		<f:selectItem itemLabel="JUAN GUAIDÓ - 23" itemValue="23" />
+	</h:selectOneMenu>
+	<p />
+
+	<br />
+	<p />
+	<h:commandButton value="Votar" action="#{urnaEletronicaMB.registraVotos()}" />
+</h:form>
+
+	<h:commandButton value="Resultado" action="#{urnaEletronicaMB.calculaResultado()}" />
 
 </html>
